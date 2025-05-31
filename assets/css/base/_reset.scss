@@ -1,0 +1,105 @@
+// reset css
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+// common class
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.section_padding {
+  padding: 100px 0;
+}
+
+// button css
+.btn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  text-align: center;
+
+  transition: 0.3s;
+  &.btn_box {
+    background: orange;
+    padding: 10px 30px;
+    border-radius: 5px;
+    &:hover {
+      background: darken(orange, 10);
+    }
+  }
+  &.btn_outline {
+    border: 2px solid lightgray;
+    padding: 8px 28px;
+    border-radius: 5px;
+    &:hover {
+      border-color: orange;
+    }
+  }
+
+  &.btn_text {
+    border-bottom: 2px solid transparent;
+    color: orange;
+    &:hover {
+      border-bottom: 2px solid orange;
+    }
+  }
+}
+
+// mixins
+@mixin overlay {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+// spacing utilities
+@for $i from 1 to 12 {
+  .pt-#{$i * 10} {
+    padding-top: $i * 10px;
+  }
+  .pb-#{$i * 10} {
+    padding-bottom: $i * 10px;
+  }
+  .mt-#{$i * 10} {
+    margin-top: $i * 10px;
+  }
+  .mb-#{$i * 10} {
+    margin-bottom: $i * 10px;
+  }
+}
