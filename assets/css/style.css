@@ -315,33 +315,32 @@ p {
   color: #fff;
   padding: 10px 0;
 }
-
-.navbar {
+.header_area .navbar {
   display: grid;
   grid-template-columns: 20% 80%;
   gap: 30px;
   align-items: center;
 }
-.navbar .logo_box a {
+.header_area .navbar .logo_box a {
   width: 100%;
   display: inline-block;
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 600;
 }
-.navbar .menu ul {
+.header_area .navbar .menu ul {
   display: flex;
   justify-content: end;
 }
-.navbar .menu li {
+.header_area .navbar .menu li {
   margin-left: 30px;
 }
-.navbar .menu a {
+.header_area .navbar .menu a {
   text-transform: capitalize;
   font-size: 18px;
   transition: 0.3s;
 }
-.navbar .menu a:hover {
+.header_area .navbar .menu a:hover {
   color: orange;
 }
 
@@ -422,47 +421,107 @@ p {
   width: 70%;
 }
 
-.about {
+.about_area .about {
   display: grid;
   grid-template-columns: 60% 40%;
   gap: 40px;
   margin: 60px 0;
 }
-.about .about_text h4 {
+.about_area .about .about_text h4 {
   font-size: 30px;
   font-weight: 600;
   text-transform: capitalize;
 }
-.about .about_text p {
+.about_area .about .about_text p {
   margin: 20px 0;
 }
-.about .about_image {
+.about_area .about .about_image {
   box-shadow: 15px 15px 0px 0px orange;
 }
-
-.about_bottom_wrapper {
+.about_area .about .about_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about_area .about_bottom_wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   text-align: center;
 }
-.about_bottom_wrapper .single_bottom {
+.about_area .about_bottom_wrapper .single_bottom {
   display: flex;
   flex-direction: column;
   gap: 10px;
   text-align: center;
 }
-.about_bottom_wrapper .single_bottom i {
+.about_area .about_bottom_wrapper .single_bottom i {
   font-size: 30px;
   color: #333;
 }
-.about_bottom_wrapper .single_bottom h4 {
+.about_area .about_bottom_wrapper .single_bottom h4 {
   font-size: 25px;
   text-transform: capitalize;
   font-weight: 600;
 }
-.about_bottom_wrapper .single_bottom a {
+.about_area .about_bottom_wrapper .single_bottom a {
   width: -moz-fit-content;
   width: fit-content;
   align-self: center;
+}
+
+.features_area {
+  background-color: lightgray;
+  position: relative;
+}
+.features_area::after {
+  content: "";
+  width: 48%;
+  height: 100%;
+  background-image: url("../../assets/img/features/feature-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.features_area::before {
+  content: "";
+  width: 48%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.features_area .features .section_title P {
+  width: 100%;
+}
+.features_area .features_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.features_area .features_content_box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+}
+.features_area .features_content_box .single_feature {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.features_area .features_content_box .single_feature i {
+  font-size: 30px;
+}
+.features_area .features_content_box .single_feature h4 {
+  text-transform: capitalize;
+  font-size: 25px;
 }/*# sourceMappingURL=style.css.map */

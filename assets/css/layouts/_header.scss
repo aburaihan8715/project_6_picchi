@@ -6,38 +6,38 @@
   left: 0;
   color: #fff;
   padding: 10px 0;
-}
 
-.navbar {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  gap: 30px;
-  align-items: center;
+  .navbar {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 30px;
+    align-items: center;
 
-  .logo_box {
-    a {
-      width: 100%;
-      display: inline-block;
-      font-size: 30px;
-      text-transform: uppercase;
-      font-weight: 600;
+    .logo_box {
+      a {
+        width: 100%;
+        display: inline-block;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
     }
-  }
-  .menu {
-    ul {
-      display: flex;
-      justify-content: end;
-    }
-    li {
-      margin-left: 30px;
-    }
-    a {
-      text-transform: capitalize;
-      font-size: 18px;
-      transition: 0.3s;
+    .menu {
+      ul {
+        display: flex;
+        justify-content: end;
+      }
+      li {
+        margin-left: 30px;
+      }
+      a {
+        text-transform: capitalize;
+        font-size: 18px;
+        transition: 0.3s;
 
-      &:hover {
-        color: orange;
+        &:hover {
+          color: orange;
+        }
       }
     }
   }
