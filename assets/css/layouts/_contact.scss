@@ -1,0 +1,75 @@
+.contact_area {
+  .contact_box {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+  }
+
+  .contact_address {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 30px;
+
+    .single_address {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        width: 60px;
+        height: 60px;
+        background: orange;
+        text-align: center;
+        line-height: 60px;
+        color: #fff;
+        font-size: 28px;
+      }
+
+      h4 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        span {
+          font-size: 15px;
+          display: block;
+          text-transform: lowercase;
+        }
+      }
+    }
+  }
+
+  .contact_form {
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      outline: none;
+      border: 1px solid lightgray;
+      margin-bottom: 20px;
+      transition: 0.3s;
+      &:focus {
+        border-color: orange;
+      }
+    }
+    textarea {
+      font-family: inherit;
+    }
+    input[type="submit"] {
+      background-color: orange;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: darken(orange, 10);
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.testimonials_area {
+  @include overlay;
+  color: #fff;
+
+  .testimonials_box {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    .single_testimonial {
+      border: 1px solid lightgray;
+      padding: 30px 10px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      i {
+        font-size: 60px;
+        line-height: 0.5;
+      }
+
+      .user_box {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        justify-content: center;
+
+        h4 {
+          font-size: 20px;
+          text-transform: capitalize;
+          text-align: left;
+          line-height: 1.5;
+
+          span {
+            font-size: 14px;
+            display: block;
+            text-transform: lowercase;
+          }
+        }
+
+        img {
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

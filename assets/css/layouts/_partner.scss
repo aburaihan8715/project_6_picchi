@@ -1,0 +1,13 @@
+.partner_area {
+  background: lightgray;
+
+  .partner_box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+
+    img {
+      max-width: 140px;
+    }
+  }
+}

@@ -38,6 +38,7 @@ ul {
   text-transform: capitalize;
   text-align: center;
   transition: 0.3s;
+  color: #fff;
 }
 .btn.btn_box {
   background: orange;
@@ -786,4 +787,288 @@ p {
 .video_area .video_box .video_content p {
   width: 50%;
   margin: 0 auto;
+}
+
+.price_area .price_box {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.price_area .price_box .single_price {
+  text-align: center;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+.price_area .price_box .single_price > span {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.price_area .price_box .single_price.active h4 {
+  background-color: orange;
+  color: #fff;
+}
+.price_area .price_box .single_price h4 {
+  font-size: 40px;
+  font-weight: 700;
+  background: lightgray;
+  padding: 30px 0;
+  margin: 15px 0;
+}
+.price_area .price_box .single_price h4 span {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+}
+.price_area .price_box .single_price ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.price_area .price_box .single_price li {
+  border-bottom: 1px solid lightgray;
+  padding: 10px 0;
+}
+.price_area .price_box .single_price li:last-child {
+  border-bottom: 0;
+}
+.price_area .price_box .single_price .btn_wrapper {
+  margin: 20px 0;
+}
+
+.testimonials_area {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.testimonials_area::before {
+  content: "";
+  display: table;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.testimonials_area .testimonials_box {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.testimonials_area .testimonials_box .single_testimonial {
+  border: 1px solid lightgray;
+  padding: 30px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.testimonials_area .testimonials_box .single_testimonial i {
+  font-size: 60px;
+  line-height: 0.5;
+}
+.testimonials_area .testimonials_box .single_testimonial .user_box {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials_area .testimonials_box .single_testimonial .user_box h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: left;
+  line-height: 1.5;
+}
+.testimonials_area .testimonials_box .single_testimonial .user_box h4 span {
+  font-size: 14px;
+  display: block;
+  text-transform: lowercase;
+}
+.testimonials_area .testimonials_box .single_testimonial .user_box img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.blogs_area .blogs_box {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.blogs_area .blogs_box .single_blog > a {
+  color: orange;
+  border-bottom: 2px solid transparent;
+}
+.blogs_area .blogs_box .single_blog > a:hover {
+  border-bottom: 2px solid orange;
+}
+.blogs_area .blogs_box .single_blog .blog_image {
+  position: relative;
+}
+.blogs_area .blogs_box .single_blog .blog_image .blog_meta {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background: white;
+  transform: translate(-50%, 50%);
+  padding: 15px 15px;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid lightgray;
+}
+.blogs_area .blogs_box .single_blog h4 {
+  margin-top: 60px;
+  text-transform: capitalize;
+}
+.blogs_area .blogs_box .single_blog p {
+  margin: 20px 0;
+}
+
+.subscribe_area {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.subscribe_area::before {
+  content: "";
+  display: table;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.subscribe_area .subscribe_box {
+  margin-top: 60px;
+}
+.subscribe_area .subscribe_box form {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+.subscribe_area .subscribe_box form input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+}
+.subscribe_area .subscribe_box form input[type=submit] {
+  width: auto;
+  position: absolute;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  background: orange;
+  right: 0;
+  top: -1px;
+  cursor: pointer;
+  padding: 10px 40px;
+}
+
+.footer_area {
+  text-align: center;
+  padding: 30px 0;
+  background: #333;
+  color: #fff;
+}
+.footer_area .social_box a {
+  margin: 10px 15px;
+  display: inline-block;
+}
+
+.contact_area .contact_box {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 40px;
+}
+.contact_area .contact_address {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 30px;
+}
+.contact_area .contact_address .single_address {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.contact_area .contact_address .single_address i {
+  width: 60px;
+  height: 60px;
+  background: orange;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 28px;
+}
+.contact_area .contact_address .single_address h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.contact_area .contact_address .single_address h4 span {
+  font-size: 15px;
+  display: block;
+  text-transform: lowercase;
+}
+.contact_area .contact_form input,
+.contact_area .contact_form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.contact_area .contact_form input:focus,
+.contact_area .contact_form textarea:focus {
+  border-color: orange;
+}
+.contact_area .contact_form textarea {
+  font-family: inherit;
+}
+.contact_area .contact_form input[type=submit] {
+  background-color: orange;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact_area .contact_form input[type=submit]:hover {
+  background-color: #cc8400;
+}
+
+.partner_area {
+  background: lightgray;
+}
+.partner_area .partner_box {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+.partner_area .partner_box img {
+  max-width: 140px;
 }/*# sourceMappingURL=style.css.map */
