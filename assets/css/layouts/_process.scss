@@ -1,0 +1,33 @@
+.process_area {
+  @include overlay;
+  color: #fff;
+
+  .process_box {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+
+    h4 {
+      background-color: orange;
+      padding: 10px;
+      border-radius: 5px;
+      position: relative;
+      margin-bottom: 30px;
+      text-transform: capitalize;
+
+      span {
+        position: absolute;
+        right: 0;
+        background: coral;
+        display: flex;
+        height: 100%;
+        width: 48px;
+        text-align: center;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

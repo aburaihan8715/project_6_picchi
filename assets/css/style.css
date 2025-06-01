@@ -555,4 +555,108 @@ p {
   font-size: 20px;
   border-radius: 50%;
   align-self: center;
+}
+
+.process_area {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.process_area::before {
+  content: "";
+  display: table;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.process_area .process_box {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.process_area .process_box h4 {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.process_area .process_box h4 span {
+  position: absolute;
+  right: 0;
+  background: coral;
+  display: flex;
+  height: 100%;
+  width: 48px;
+  text-align: center;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects_area .projects_box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.projects_area .projects_box .single_project {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.projects_area .projects_box .single_project:hover .project_content {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.projects_area .projects_box .single_project .project_content {
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  transform: scale(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.projects_area .projects_box .single_project .project_content::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.75;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.projects_area .projects_box .single_project .project_content i {
+  font-size: 30px;
+}
+.projects_area .projects_box .single_project .project_content h4 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.projects_area .projects_box .single_project .project_content h4 span {
+  font-size: 16px;
+  display: block;
+  text-transform: lowercase;
 }/*# sourceMappingURL=style.css.map */
