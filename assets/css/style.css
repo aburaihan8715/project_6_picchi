@@ -659,4 +659,91 @@ p {
   font-size: 16px;
   display: block;
   text-transform: lowercase;
+}
+
+.counter_area {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+.counter_area::before {
+  content: "";
+  display: table;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.counter_area .counter_box {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.counter_area .counter_box .single_counter {
+  text-align: center;
+}
+.counter_area .counter_box .single_counter i {
+  font-size: 30px;
+}
+.counter_area .counter_box .single_counter h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.counter_area .counter_box .single_counter h4 span {
+  font-size: 50px;
+  display: block;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.team_area .team_box {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.team_area .team_box .single_team {
+  height: 350px;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.team_area .team_box .single_team:hover .team_content {
+  bottom: 0;
+}
+.team_area .team_box .single_team .team_content {
+  position: absolute;
+  bottom: -132px;
+  width: 100%;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+  transition: 0.3s;
+}
+.team_area .team_box .single_team .team_content h4 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.team_area .team_box .single_team .team_content h4 span {
+  font-size: 16px;
+  display: block;
+  margin: 5px 0;
+  text-transform: lowercase;
+}
+.team_area .team_box .single_team .team_content a {
+  font-size: 15px;
+  display: inline-block;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+.team_area .team_box .single_team .team_content a:hover {
+  color: orange;
 }/*# sourceMappingURL=style.css.map */

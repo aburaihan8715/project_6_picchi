@@ -1,0 +1,29 @@
+.counter_area {
+  @include overlay;
+
+  .counter_box {
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .single_counter {
+      text-align: center;
+
+      i {
+        font-size: 30px;
+      }
+
+      h4 {
+        font-size: 20px;
+        text-transform: capitalize;
+
+        span {
+          font-size: 50px;
+          display: block;
+          margin: 20px 0;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
