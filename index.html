@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- slicknav style -->
+    <link rel="stylesheet" href="assets/css/plugins/slicknav/slicknav.min.css" />
+    <!-- slick style -->
+    <link rel="stylesheet" href="assets/css/plugins/slick-slider/slick.css" />
+    <!-- magnific popup style -->
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup/magnific-popup.css" />
     <!-- font awesome style -->
     <link rel="stylesheet" href="assets/css/plugins/font-awesome/css/all.min.css" />
     <!-- main style -->
@@ -10,7 +17,7 @@
     <title>Project six - picchi</title>
   </head>
   <body>
-    <header>
+    <header class="">
       <!-- header -->
       <div class="header_area">
         <div class="container">
@@ -20,15 +27,15 @@
             </div>
 
             <div class="menu">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">team</a></li>
-                <li><a href="#">testimonials</a></li>
-                <li><a href="#">blogs</a></li>
-                <li><a href="#">contact</a></li>
+              <ul id="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#team">team</a></li>
+                <li><a href="#testimonials">testimonials</a></li>
+                <li><a href="#blogs">blogs</a></li>
+                <li><a href="#contact">contact</a></li>
               </ul>
             </div>
           </nav>
@@ -37,7 +44,7 @@
     </header>
     <main>
       <!-- banner -->
-      <section class="banner_area" style="background-image: url('assets/img/banner/banner.jpg')">
+      <section id="home" class="banner_area" style="background-image: url('assets/img/banner/banner.jpg')">
         <div class="container">
           <div class="banner_text_box">
             <h1><span>welcome to our agency</span>gain the beautiful result</h1>
@@ -55,7 +62,7 @@
       </section>
 
       <!-- about -->
-      <section class="about_area section_padding">
+      <section id="about" class="about_area section_padding">
         <div class="container">
           <div class="section_title">
             <span>what we do</span>
@@ -181,7 +188,7 @@
       </section>
 
       <!-- services -->
-      <section class="services_area section_padding">
+      <section id="services" class="services_area section_padding">
         <div class="container">
           <div class="section_title">
             <span>what we do</span>
@@ -273,7 +280,7 @@
       </section>
 
       <!-- projects -->
-      <section class="projects_area section_padding">
+      <section id="projects" class="projects_area section_padding">
         <div class="container">
           <div class="section_title">
             <span>what we do</span>
@@ -287,37 +294,37 @@
           <div class="projects_box">
             <div class="single_project" style="background-image: url('assets/img/projects/1.jpg')">
               <div class="project_content">
-                <a href="#"><i class="fa-regular fa-square-plus"></i></a>
+                <a href="assets/img/projects/1.jpg" class="project_popup"><i class="fa-regular fa-square-plus"></i></a>
                 <h4>project name <span>category</span></h4>
               </div>
             </div>
             <div class="single_project" style="background-image: url('assets/img/projects/2.jpg')">
               <div class="project_content">
-                <a href="#"><i class="fa-regular fa-square-plus"></i></a>
+                <a href="assets/img/projects/2.jpg" class="project_popup"><i class="fa-regular fa-square-plus"></i></a>
                 <h4>project name <span>category</span></h4>
               </div>
             </div>
             <div class="single_project" style="background-image: url('assets/img/projects/3.jpg')">
               <div class="project_content">
-                <a href="#"><i class="fa-regular fa-square-plus"></i></a>
+                <a href="assets/img/projects/3.jpg" class="project_popup"><i class="fa-regular fa-square-plus"></i></a>
                 <h4>project name <span>category</span></h4>
               </div>
             </div>
             <div class="single_project" style="background-image: url('assets/img/projects/4.jpg')">
               <div class="project_content">
-                <a href="#"><i class="fa-regular fa-square-plus"></i></a>
+                <a href="assets/img/projects/4.jpg" class="project_popup"><i class="fa-regular fa-square-plus"></i></a>
                 <h4>project name <span>category</span></h4>
               </div>
             </div>
             <div class="single_project" style="background-image: url('assets/img/projects/5.jpg')">
               <div class="project_content">
-                <a href="#"><i class="fa-regular fa-square-plus"></i></a>
+                <a href="assets/img/projects/5.jpg" class="project_popup"><i class="fa-regular fa-square-plus"></i></a>
                 <h4>project name <span>category</span></h4>
               </div>
             </div>
             <div class="single_project" style="background-image: url('assets/img/projects/6.jpg')">
               <div class="project_content">
-                <a href="#"><i class="fa-regular fa-square-plus"></i></a>
+                <a href="assets/img/projects/6.jpg" class="project_popup"><i class="fa-regular fa-square-plus"></i></a>
                 <h4>project name <span>category</span></h4>
               </div>
             </div>
@@ -331,26 +338,26 @@
           <div class="counter_box">
             <div class="single_counter">
               <i class="fa-solid fa-folder-open"></i>
-              <h4><span>543</span>projects</h4>
+              <h4><span class="counter">543</span>projects</h4>
             </div>
             <div class="single_counter">
               <i class="fa-solid fa-award"></i>
-              <h4><span>32</span>awards</h4>
+              <h4><span class="counter">32</span>awards</h4>
             </div>
             <div class="single_counter">
               <i class="fa-solid fa-users"></i>
-              <h4><span>45</span>users</h4>
+              <h4><span class="counter">45</span>users</h4>
             </div>
             <div class="single_counter">
               <i class="fa-solid fa-coffee"></i>
-              <h4><span>3245</span>cup of coffee</h4>
+              <h4><span class="counter">3245</span>cup of coffee</h4>
             </div>
           </div>
         </div>
       </section>
 
       <!-- team -->
-      <section class="team_area section_padding">
+      <section id="team" class="team_area section_padding">
         <div class="container">
           <div class="section_title">
             <span>what we do</span>
@@ -397,7 +404,7 @@
         <div class="container">
           <div class="video_box">
             <div class="video_content">
-              <a href="#"> <i class="fa-regular fa-circle-play"></i></a>
+              <a href="https://www.youtube.com/watch?v=eEzD-Y97ges" class="video_popup"> <i class="fa-regular fa-circle-play"></i></a>
               <h4>we are awesome</h4>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis perspiciatis magni, ea error rem incidunt quisquam quas accusantium
@@ -413,7 +420,7 @@
         <div class="container">
           <div class="section_title">
             <span>what we do</span>
-            <h2>our team</h2>
+            <h2>prices</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit at eos debitis esse perferendis culpa repellat accusantium eligendi
               blanditiis quaerat.
@@ -470,7 +477,7 @@
       </section>
 
       <!-- testimonials -->
-      <section class="testimonials_area section_padding" style="background-image: url('assets/img/testimonials/test_back.jpg')">
+      <section id="testimonials" class="testimonials_area section_padding" style="background-image: url('assets/img/testimonials/test_back.jpg')">
         <div class="container">
           <div class="section_title">
             <span>what we do</span>
@@ -480,7 +487,7 @@
               blanditiis quaerat.
             </p>
           </div>
-          <div class="testimonials_box">
+          <div class="testimonials_box testimonials">
             <div class="single_testimonial">
               <i class="fa-solid fa-quote-left"></i>
               <p>
@@ -517,12 +524,36 @@
                 <h4>john doe <span>web developer</span></h4>
               </div>
             </div>
+            <div class="single_testimonial">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, cumque optio dolorem repudiandae quae placeat cupiditate quisquam
+                eveniet? Vitae, dolore!
+              </p>
+
+              <div class="user_box">
+                <img src="assets/img/team/2.jpg" alt="use profile" />
+                <h4>john doe <span>web developer</span></h4>
+              </div>
+            </div>
+            <div class="single_testimonial">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, cumque optio dolorem repudiandae quae placeat cupiditate quisquam
+                eveniet? Vitae, dolore!
+              </p>
+
+              <div class="user_box">
+                <img src="assets/img/team/1.jpg" alt="use profile" />
+                <h4>john doe <span>web developer</span></h4>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- blogs -->
-      <section class="blogs_area section_padding">
+      <section id="blogs" class="blogs_area section_padding">
         <div class="container">
           <div class="section_title">
             <span>what we do</span>
@@ -606,7 +637,7 @@
       </section>
 
       <!-- contact -->
-      <section class="contact_area section_padding">
+      <section id="contact" class="contact_area section_padding">
         <div class="container">
           <div class="section_title">
             <span>what we do</span>
@@ -677,5 +708,26 @@
         </div>
       </div>
     </footer>
+    <!-- jquery js -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- slicknav js -->
+    <script src="assets/js/slicknav.min.js"></script>
+
+    <!-- slick js -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- waypoints js -->
+    <script src="assets/js/waypoints.min.js"></script>
+
+    <!-- counterup js -->
+    <script src="assets/js/counterup.min.js"></script>
+
+    <!-- magnific popup js -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- onepage nav js -->
+    <script src="assets/js/onepage-nav.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
